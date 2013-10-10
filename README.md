@@ -1,4 +1,4 @@
-# Algorithm and Datastructure practices in C
+# Algorithms and Datastructures in C
 
 ## Structure
 For every practice there is a folder with the code in it.

@@ -1,23 +1,23 @@
 # How to run and compile c code
 
-## Install dependency for compiling C and CPP code
+_Install dependency for compiling C and CPP code_
 
     sudo apt-get install build-essential
 
-## Compiling a C program
+_Compiling a C program_
 
     gcc -Wall -W -Werror main.c -o [EXECUTABLE_NAME]
 
-## Compiling a CPP program
+_Compiling a CPP program_
     
     g++ -Wall -W -Werror main.cpp -o [EXECUTABLE_NAME]
 
-## Makefile
+_Makefile_
 There should be a makefile in every code directory, so just run
     
     make
 
 
-## Execute a C/CPP program
+_Execute a C/CPP program_
 
     ./EXECUTABLE_NAME

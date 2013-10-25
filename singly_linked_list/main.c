@@ -22,6 +22,10 @@ int main () {
   n->data = NULL;
   n->next = NULL;
 
+  char line[20];
+  line = read_line(line, 20, stdin);
+  printf(line);
+
   return 0;
 }
 

@@ -22,7 +22,3 @@ __Makefile__
 There should be a makefile in every code directory, so just run `make`.
 It should compile the program to the subdirectory build
 
-
-__Execute a C/CPP program__
-
-    ./build/EXECUTABLE_NAME

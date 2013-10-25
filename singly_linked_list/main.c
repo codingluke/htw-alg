@@ -23,8 +23,9 @@ int main () {
   n->next = NULL;
 
   char line[20];
-  line = read_line(line, 20, stdin);
-  printf(line);
+  printf("Please enter someting:\n> ");
+  read_line(line, 20, stdin);
+  printf("$ %s\n", line);
 
   return 0;
 }

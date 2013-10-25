@@ -2,12 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define BUFFSIZE 25
+
 char *read_line (char *buf, size_t length, FILE *f);
 
 typedef struct student {
-  char surname[25];
-  char name[25];
-  char study_path[25];
+  char surname[BUFFSIZE];
+  char name[BUFFSIZE];
+  char study_path[BUFFSIZE];
   int mat_num;
 } STUDENT;
 
@@ -17,15 +19,18 @@ typedef struct node {
 } NODE;
 
 int main () {
+  // Initialize first node 
   NODE *n;
   n = malloc(sizeof(NODE));
   n->data = NULL;
   n->next = NULL;
 
-  char line[20];
+  char line[BUFFSIZE];
   printf("Please enter someting:\n> ");
-  read_line(line, 20, stdin);
+  read_line(line, BUFFSIZE, stdin);
   printf("$ %s\n", line);
+  
+  free(n);
 
   return 0;
 }
